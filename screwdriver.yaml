@@ -5,6 +5,7 @@ shared:
 jobs:
   functional-test:
     requires:
+      - ~pr
       - ~commit
     steps:
       - test: echo "test"
