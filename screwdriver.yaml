@@ -1,0 +1,10 @@
+version: 4
+shared:
+  image: node:12
+
+jobs:
+  functional-test:
+    requires:
+      - ~commit
+    steps:
+      - test: echo "test"
